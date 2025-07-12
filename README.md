@@ -4,6 +4,6 @@ medbot-gemini.py demonstrates how to build a Retrieval-Augmented Generation (RAG
 
 To run this script, you will need to install the following libraries:
 
-'pip install langchain langchain_community langchain_text_splitters langchain_openai langchain_chroma langchain-google-genai faiss-cpu beautifulsoup4 gradio python-dotenv requests'
+''pip install langchain langchain_community langchain_text_splitters langchain_openai langchain_chroma langchain-google-genai faiss-cpu beautifulsoup4 gradio python-dotenv requests''
 
 You will also need a Google API key for the Gemini API, and openAI API key for Chat GPT.
