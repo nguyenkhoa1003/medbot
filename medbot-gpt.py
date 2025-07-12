@@ -105,12 +105,12 @@ def create_vector_store(documents):
     Returns:
         FAISS: A FAISS vector store containing the document embeddings.
     """
-    text_splitter = CharacterTextSplitter(chunk_size=10000, chunk_overlap=0)
+    text_splitter = CharacterTextSplitter(chunk_size=500, chunk_overlap=0)
     split_docs = text_splitter.split_documents(documents)
 
     print(f"Split into {len(split_docs)} text chunks.")
 
-    embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
+    embeddings = OpenAIEmbeddings(model="text-embedding-3-large", dimensions=2048)
     
     # FAISS is used for efficient similarity search
     vector_store = FAISS.from_documents(split_docs, embeddings)
