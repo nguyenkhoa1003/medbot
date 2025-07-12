@@ -3,7 +3,7 @@
 ## Group 2: Residency Day 2: Project 2: Hackathon Projects
 ### The University of Cumberlands - MSAI-630-M40: Generative AI with Large Language Models
 
-This is LLM-based assistant that helps patients understand symptoms, diseases, medications, and basic first aid.
+This is an LLM-based assistant that helps patients understand symptoms, diseases, medications, and basic first aid by answering queries from users/patients.
 
 medbot-gemini.py demonstrates how to build a Retrieval-Augmented Generation (RAG) chatbot using Langchain, the Google Gemini API, and health information from MedlinePlus. The chatbot can answer user questions about various health topics by searching through the MedlinePlus dataset.
 
