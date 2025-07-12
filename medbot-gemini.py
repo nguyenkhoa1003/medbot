@@ -107,7 +107,7 @@ def create_vector_store(documents):
 
     print(f"Split into {len(split_docs)} text chunks.")
 
-    embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+    embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
     vector_store = FAISS.from_documents(split_docs, embeddings)
     return vector_store
 
